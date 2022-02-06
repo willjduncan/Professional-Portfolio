@@ -126,6 +126,14 @@ header nav ul li a:hover {
 #pastel {
     background-image: url("../images/pastel.jpeg");
 }
+.project img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    height: 200px;
+    width: 100%; 
+}
 #LED {
     background-image: url("../images/led.jpeg");
 }
@@ -133,15 +141,13 @@ header nav ul li a:hover {
     height: 800px;
 }
 .project {
-    margin: 30px auto;
-    padding-bottom: 10px;
+    position: relative;
+    margin: 10px auto;
     display: flex;
     align-items: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    opacity: .5;
-    width: 34%;
-    height: 200px;
+    opacity: .7;
+    width: 40%;
     border: 2px solid var(--secondary-color);
     border-radius: 10px 10px 10px;
 }
@@ -162,6 +168,7 @@ header nav ul li a:hover {
 }
 .project-name {
     background-color: var(--fifth-color);
+    display: absolute;
 }
 /* WORK STYLES END */
 /* CONTACT ME STYLES START */
@@ -169,6 +176,8 @@ header nav ul li a:hover {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--fifth-color);
+    width: 100%;
 }
 .contact-info {
     display: inline-flex;
@@ -232,7 +241,19 @@ header nav ul li a:hover {
 /* CONTACT ME STYLES END */
 /* RESUME STYLES START */
 #resume {
-    
+    align-items: center;
+    background: var(--fifth-color);
+}
+#resume h2 {
+    height: 150px;
+}
+#resume h3 {
+    font-size: 30px;
+    padding: 0 0 0 30px;
+    border-top: 3px solid var(--secondary-color);
+    margin: 0 70px;
+    width: 70%;
+    text-align: center;
 }
 /* RESUME STYLES END */
 /* FOOTER STYLES START */
