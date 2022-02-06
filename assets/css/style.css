@@ -27,6 +27,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top:0;
+    z-index: 9999;
 }
 header h1 {
     font-weight: bold;
@@ -85,37 +86,33 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
 }
-.intro p {
-    line-height: 1.7;
-    color: var(--tertiary-color);
-    width: 65%;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-}
-.intro h3 {
-    text-align: center;
-    font-size: 28px;
-}
-.about-me {
-    display: flex;
-    flex-wrap: wrap;
-}
 .about-me-text {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    line-height: 1.5;
-    width: 75%
-
+    line-height: 1.7;
+    width: 75%;
+    text-align: center;
+}
+.about-me-text h3 {
+    font-size: 28px;
+}
+.about-me-text p {
+    width: 75%;
+    font-size: 20px;
+    margin: 0 auto;
 }
 /* ABOUT ME STYLES END */
 /* WORK STYLES START */
 .projects {
-    /* background-color: var(--primary-color); */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+}
+.work-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 75%;
 }
 #run-buddy {
     background-image: url("../images/run-buddy.jpeg");
@@ -132,32 +129,112 @@ header nav ul li a:hover {
 #LED {
     background-image: url("../images/led.jpeg");
 }
+#work h2 {
+    height: 800px;
+}
 .project {
     margin: 30px auto;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 30%;
+    opacity: .5;
+    width: 34%;
     height: 200px;
-    /* margin: 10px; */
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px 10px 10px;
+}
+.project:hover {
+    border: 3px solid var(--fifth-color);
+    opacity: 1;
 }
 .project p {
     color: var(--tertiary-color);
     font-size: 16px;
 }
-.project h4 {
+.project a {
     font-size: 20px;
     line-height: 1.5;
     color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
 }
 .project-name {
     background-color: var(--fifth-color);
 }
 /* WORK STYLES END */
+/* CONTACT ME STYLES START */
+#contact-me {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-info {
+    display: inline-flex;
+    align-items: center;
+}
+.contact-info iframe {
+    height: 400px;
+}
+.contact-info a {
+    color: var(--secondary-color);  
+}
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+.address {
+    display: inline-flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+}
+.contact-info h3 {
+    color: var(--secondary-color);
+    font-size: 24px;
+}
+.contact-info address, .contact-info p {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-style: normal;
+    font-size: 16px;
+}
+.contact-form input, .contact-form textarea {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255, 0.75);;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);;
+    outline: none;
+  }
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.contact-form button:hover {
+    color: var(--primary-color);
+    background: var(--tertiary-color);
+}
+/* CONTACT ME STYLES END */
+/* RESUME STYLES START */
+#resume {
+    
+}
+/* RESUME STYLES END */
 /* FOOTER STYLES START */
 footer {
     background: var(--primary-color);
@@ -184,8 +261,8 @@ footer a {
 .section-title {
     display: flex;
     justify-content: flex-start;
+    align-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
     font-size: 45px;
     color: var(--secondary-color);
     border-right: 3px solid;
@@ -196,10 +273,8 @@ footer a {
 .primary-border {
     border-color: var(--primary-color);
 }
-.secondary-border {
-    border-color: var(--tertiary-color);
-}
 .flex-row {
     display: flex;
+    flex-wrap: wrap;
 }
 /* UTILITY STYLES END */
