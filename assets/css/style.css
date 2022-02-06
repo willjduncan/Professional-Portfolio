@@ -88,12 +88,10 @@ footer a {
     background-image: url("../images/portrait.JPG");
     background-size: cover;
     display: flex;
-    /* justify-content: center; */
     flex-wrap: wrap;
     align-items: flex-start;
     background-repeat: no-repeat;
     background-position: 60% 40%;
-    /* background-attachment: fixed; */
     padding: 200px 0;
 }
 .hero h2 {
@@ -102,3 +100,48 @@ footer a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 320px;
 }
+/* HERO STYLES END */
+/* ABOUT ME STYLES START */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 65%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro h3 {
+    text-align: center;
+    font-size: 28px;
+}
+/* ABOUT ME STYLES END */
+/* UTILITY STYLES START */
+.section-title {
+    font-size: 48px;
+    color: var(--secondary-color);
+    border-right: 3px solid;
+    padding-bottom: 20px;
+    text-align: left
+    margin: 0 auto 35px auto;
+    width: 15%;
+}
+.primary-border {
+    border-color: var(--primary-color);
+}
+.secondary-border {
+    border-color: var(--tertiary-color);
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.flex-row {
+    display: flex;
+}
+/* UTILITY STYLES END */
