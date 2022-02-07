@@ -185,6 +185,7 @@ header nav ul li a:hover {
 .contact-info {
     display: inline-flex;
     align-items: center;
+    width: 80%;
 }
 .contact-info iframe {
     height: 400px;
@@ -250,12 +251,16 @@ header nav ul li a:hover {
     height: 150px;
 }
 #resume h3 {
+}
+#resume div {
     font-size: 30px;
-    padding: 0 0 0 30px;
-    border-top: 3px solid var(--secondary-color);
-    margin: 0 70px;
-    width: 70%;
-    text-align: center;
+    padding: 20px 0 0 30px;
+    /* border-top: 3px solid var(--primary-color); */
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
 }
 /* RESUME STYLES END */
 /* FOOTER STYLES START */
@@ -400,12 +405,16 @@ footer a {
         height: 45px;
         border-bottom: 3px solid;
     }
+    .contact-info {
+        width: auto;
+    }
     #resume h2 {
         height: 45px;
-        border-bottom: none;
+        /* border-bottom: none; */
     }
     #resume h3 {
         width: 100%;
+        font-size: 30px;
     }
 }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -430,6 +439,9 @@ footer a {
     #resume h3 {
         padding: 20px 0 0 0;
         text-align: center;
+    }
+    #resume div {
+        padding: 0;
     }
 }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
