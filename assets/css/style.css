@@ -47,7 +47,6 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 header nav ul li a {
@@ -67,10 +66,6 @@ header nav ul li a:hover {
 .hero {
     background-image: url("../images/portrait.JPG");
     background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-repeat: no-repeat;
     background-position: 60% 40%;
     padding: 200px 0;
 }
@@ -78,7 +73,8 @@ header nav ul li a:hover {
     font-size: 32px;
     color: var(--tertiary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 320px;
+    width: 35%;
+    padding: 0 0 50px 50px;
 }
 /* HERO STYLES END */
 /* ABOUT ME STYLES START */
@@ -87,8 +83,6 @@ header nav ul li a:hover {
     flex-wrap: wrap;
 }
 .about-me-text {
-    align-items: center;
-    justify-content: center;
     margin-top: 10px;
     line-height: 1.7;
     width: 75%;
@@ -143,7 +137,6 @@ header nav ul li a:hover {
     height: 950px;
 }
 .project {
-    position: relative;
     margin: 10px auto;
     display: flex;
     align-items: center;
@@ -171,7 +164,6 @@ header nav ul li a:hover {
 }
 .project-name {
     background-color: var(--fifth-color);
-    display: absolute;
 }
 /* WORK STYLES END */
 /* CONTACT ME STYLES START */
@@ -250,17 +242,14 @@ header nav ul li a:hover {
 #resume h2 {
     height: 150px;
 }
-#resume h3 {
-}
 #resume div {
     font-size: 30px;
     padding: 20px 0 0 30px;
-    /* border-top: 3px solid var(--primary-color); */
     display: flex;
-    flex-wrap: wrap;
     width: 80%;
     justify-content: center;
     margin: auto;
+    text-align: center;
 }
 /* RESUME STYLES END */
 /* FOOTER STYLES START */
@@ -309,7 +298,6 @@ footer a {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
-        padding-bottom: 0;
         justify-content: center;
         position: relative;
     }
@@ -324,6 +312,15 @@ footer a {
     }
     header nav ul li a {
         font-size: 20px;
+    }
+    .hero {
+        position: relative;
+    }
+    .hero h2 {
+        padding: 0 0 50px 50px;
+        position: absolute;
+        top: 10px;
+        width: 40%;
     }
     .section-title {
         width: 22%;
@@ -351,10 +348,6 @@ footer a {
         justify-content: space-around;
         align-content: center;
     }
-    #resume {
-        display: flex;
-        flex-wrap: wrap;
-    }
     #resume h2 {
         height: 200px;
     }
@@ -363,14 +356,20 @@ footer a {
         margin: 0 30px;
         width: 40%;
     }
+    .flex-row {
+        flex-wrap: nowrap;
+    }
+    #resume div {
+        width: auto
+    }
 }
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    .hero h2 {
-        padding: 0 0 70px 0;
-    }
     section {
         padding: 30px 15px;
+    }
+    .hero h2 {
+        padding: 0 0 70px 0;
     }
     .section-title {
         width: 100%;
@@ -385,17 +384,17 @@ footer a {
         justify-content: center;
         height: 700px;
     }
+    .project {
+        width: 48%;
+        padding: 0;
+        margin: 0;
+    }
     #work h2 {
         height:50px;
     }
     #run-buddy {
         height: 200px;
         width: 100%;
-    }
-    .project {
-        width: 48%;
-        padding: 0;
-        margin: 0;
     }
     #contact-me {
         display: block;
@@ -410,19 +409,19 @@ footer a {
     }
     #resume h2 {
         height: 45px;
-        /* border-bottom: none; */
     }
     #resume h3 {
         width: 100%;
         font-size: 30px;
     }
+    .flex-row {
+        display: block;
+    }
 }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen  and (max-width: 575px) {
     .hero h2 {
-        position: absolute;
         padding: 0;
-        top: 5em;
     }
     .section-title {
         width: 95%;
@@ -438,7 +437,6 @@ footer a {
     }
     #resume h3 {
         padding: 20px 0 0 0;
-        text-align: center;
     }
     #resume div {
         padding: 0;
@@ -446,11 +444,6 @@ footer a {
 }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen  and (max-width: 400px) {
-    .hero h2 {
-        position: absolute;
-        padding: 0;
-        top: 6em;
-    }
     .project {
         width: 100%;
     }

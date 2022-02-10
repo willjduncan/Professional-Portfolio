@@ -1,10 +1,6 @@
 # Professional-Portfolio
 Challenge Week 2
 
-# Code Refactor Starter Code
-
-## <Horiseon>
-
 ## Description
 
 Professional-Portfolio is a website designed by myself to show off my best coding projects, so that I can display them for potential employers to see as I complete them. The website itself will be another way to show off my coding skills and what I learned so far using HTML and CSS. It needs to be interactive, organized, and meet accessibility standards so that it is readable on any device.  
@@ -39,12 +35,12 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 By accomplishing these goals, my website will serve as an ideal and impressive center where I can demonstrate my coding abilities. 
 
-<!-- 
-Before the edits were done, there were a lot of div elements that made the code unclear, and a lot of repetitive styles being used in CSS. Furthermore, one of the links in the navigation page was broken, and there were no alt descriptions for the images. 
+First, I created the HTML section by section, in a similar style that RunBuddy was set up, beginning with the header and footer, followed by the hero, and then on to the Contact Me, Resume, and Work sections. These sections were chosen based on the mock-up video, as were the different work projects. Since Run Buddy is the only project completed so far, that was the only one I linked correctly. The projects link to tangentially related websites to serve as current placeholders.  
 
-Through the project, I applied the lessons learned in module 1 on the importance of semantic elements within HTML. I figured out how to use classes in a way that minimizes the amount of code typed within CSS. I also reorganized elements so that they proceeded in a logical way that complimented the HTML layout without compromising any of the visual elements already in place. I also made extensive use of the comment system to tell the reader what changes I made, as well as to show where one section ends and another begins. The distinction between the two comment types can be seen through the use of All Caps. 
+Once I had those HTML elements in place, I added CSS. Using a color code complimenter and generator found at https://coolors.co/, I arranged the styles to look good first as viewed from my own laptop. Once that was complete, I used Chrome DevTools to make changes and then tinker with the style at different sizes. Although Run Buddy was arranged for only 4 sizes (laptop, 980px, 768px, 570px), I also included an extra case for screen sizes below 400px, because things got wonky viewing it from common devices like the iPhone X. 
 
-Now, the website works even better than it used to, and can serve more easily as a template or something to grow from in the future.  -->
+Now, the website is ready to be viewed and to have new projects added to it whenever I complete them. 
+
 
 ## Installation
 
@@ -60,17 +56,16 @@ The link to the live website is below:
 
 ## Usage
 
-The mock-up, whose look should not and did not differ from the final product, is shown below
+Screenshots are shown of the Professional Portfolio at the screen dimensions of 375px, 568px, 768px, and 812px respectively, to show how Chrome DevTools was used to help make sure the webpage is user-friendly and mobile-accessible. 
 
-![mock-up](/assets/images/mock-up.png)
-
-You can use the new, clean code as a template in case a new page needs to be added to the website, or as an example to show new coders what good code looks like. An example of the edited code is below. Note the alternate text, the comments, and the semantic HTML elements. 
-
-![screenshot](/assets/images/coding-screenshot.png)
+![screenshot at 375px](/assets/images/screenshot-375px.png)
+![screenshot at 568px](/assets/images/screenshot-568px.png)
+![screenshot at 768px](/assets/images/screenshot-768px.png)
+![screenshot at 812px](/assets/images/screenshot-812px.png)
 
 ## Credits
 
-No classmates or instructors were used in the making of this website. The coding boot camp Professional README Guide found at https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide was used as a template for this README. The WHEN/THEN section of this README was taken directly from the homework assignment Acceptance Criteria. The Run-Buddy project of Modules 1 and 2 were used as an example to emulate as I organized Horiseon's website.  The license was picked from [https://choosealicense.com/](https://choosealicense.com/), as suggested by the README Guide aforementioned. 
+No classmates or instructors were used in the making of this website. The coding boot camp Professional README Guide found at https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide was used as a template for this README. The WHEN/THEN section of this README was taken directly from the homework assignment Acceptance Criteria. The Run-Buddy project of Modules 1 and 2 were used as an example to emulate as I organized Horiseon's website.  The license was picked from [https://choosealicense.com/](https://choosealicense.com/), as suggested by the README Guide aforementioned. The color choices were made with the help of [https://coolors.co/](https://coolors.co/).
 
 ## License
 
