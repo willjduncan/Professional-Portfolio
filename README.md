@@ -65,7 +65,7 @@ Screenshots are shown of the Professional Portfolio at the screen dimensions of 
 
 ## Credits
 
-No classmates or instructors were used in the making of this website. The coding boot camp Professional README Guide found at https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide was used as a template for this README. The WHEN/THEN section of this README was taken directly from the homework assignment Acceptance Criteria. The Run-Buddy project of Modules 1 and 2 were used as an example to emulate as I organized Horiseon's website.  The license was picked from [https://choosealicense.com/](https://choosealicense.com/), as suggested by the README Guide aforementioned. The color choices were made with the help of [https://coolors.co/](https://coolors.co/).
+No classmates or instructors were used in the making of this website. The coding boot camp Professional README Guide found at https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide was used as a template for this README. The WHEN/THEN section of this README was taken directly from the homework assignment Acceptance Criteria. The Run-Buddy project of Modules 1 and 2 were used as an example to emulate.  The license was picked from [https://choosealicense.com/](https://choosealicense.com/), as suggested by the README Guide aforementioned. The color choices were made with the help of [https://coolors.co/](https://coolors.co/).
 
 ## License
 
