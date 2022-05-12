@@ -3,7 +3,7 @@
     --primary-color: #6DD3CE;
     --secondary-color: #011627;
     --tertiary-color: #b2396b;
-    --fourth-color: #C8E9A0;
+    --fourth-color: #D8D0C1;
     --fifth-color: #F3C677;
   }
   /* UNIVERSAL SELECTOR */
@@ -15,7 +15,7 @@
 body {
     color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
-    background: var(--fourth-color);
+    background: var(white);
 }
 /* HEADER STYLES START */
 header {
@@ -26,6 +26,7 @@ header {
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
+    box-shadow: 3px 3px 3px var(--fourth-color);
     top:0;
     z-index: 9999;
 }
@@ -64,29 +65,33 @@ header nav ul li a:hover {
 /* HEADER STYLES END */
 /* HERO STYLES START */
 .hero {
-    background-image: url("../images/portrait.JPG");
+    background-image: url("../images/pic.png");
     background-size: cover;
     background-position: 60% 40%;
     padding: 200px 0;
 }
 .hero h2 {
-    font-size: 32px;
-    color: var(--tertiary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--secondary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 35%;
-    padding: 0 0 50px 50px;
+    width: 36%;
+    padding: 20px;
+    /* padding: 0 0 50px 50px; */
+    /* align-items: center; */
+    margin-right: 30px;
+    margin-left: auto;
+    background-color: rgb(243, 198, 119, .5);
+    border-radius: 10px 10px 10px;
 }
 /* HERO STYLES END */
 /* ABOUT ME STYLES START */
-.intro {
-    display: flex;
-    flex-wrap: wrap;
-}
 .about-me-text {
     margin-top: 10px;
     line-height: 1.7;
     width: 75%;
     text-align: center;
+    margin: auto;
 }
 .about-me-text h3 {
     font-size: 28px;
@@ -98,64 +103,57 @@ header nav ul li a:hover {
 }
 /* ABOUT ME STYLES END */
 /* WORK STYLES START */
-/* .projects { */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-/* } */
-/* .work-boxes {
-    gap: 10px;
-} */
-#run-buddy {
-    background-image: url("../images/run-buddy.jpeg");
-}
-#surf {
-    background-image: url("../images/surf.jpeg");
-}
-#nat-park-picker {
-    background-image: url("../images/nat-park-picker.jpeg");
-    height: 370px;
+.border-bot, .about-title {
+    border-bottom: 3px solid var(--primary-color);
     width: 80%;
+    text-align: center;
+    margin: 40px auto 20px auto;
+    font-size: 45px;
+    color: var(--secondary-color);
 }
-#pastel {
-    background-image: url("../images/pastel.jpeg");
+.card-style {
+    background-color: rgb(109, 211, 206, .5);
 }
-#LED {
-    background-image: url("../images/led.jpeg");
+.card {
+    color: var(--fifth);
+    -webkit-transition: all .6s;
+    -moz-transition:    all .6s;
+    -ms-transition:     all .6s;
+    -o-transition:      all .6s;
+    /* border: 2px solid #ccc; */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    padding: 0;
 }
-.project img {
-    /* position: absolute; */
-    top: 0;
-    right: 0;
-    opacity: 0;
-    /* height: 100%; */
-    /* width: 100%;  */
+.container {
+    margin-bottom: 30px;
 }
+
 #work h2 {
-    height: 375px;
-    width: 125px;
     margin: 0;
 }
-.project {
-    /* margin: 10px auto; */
-    /* display: flex; */
-    /* align-items: center; */
-    margin: 0 12px;
+.work-boxes {
+    gap: 20px;
+}
+.card {
     background-size: cover;
     opacity: .7;
-    width: 440px;
-    height: 315px;
-    border: 2px solid var(--secondary-color);
+    border: 3px solid var(--secondary-color);
     border-radius: 10px 10px 10px;
 }
-.project:hover {
+.card img{
+    border-radius: 7px 7px 7px;
+}
+.card:hover {
+    /* box-shadow: 3px 3px 3px var(--fourth-color); */
+    background-color: rgb(109, 211, 206, .7);
     border: 3px solid var(--fifth-color);
     opacity: 1;
 }
-.project p {
+.card p {
     color: var(--tertiary-color);
     font-size: 16px;
 }
-.project a {
+.card a {
     font-size: 20px;
     line-height: 1.5;
     color: var(--secondary-color);
@@ -258,15 +256,15 @@ header nav ul li a:hover {
     margin: 0;
 }
 footer {
-    background: var(--primary-color);
+    background: var(--tertiary-color);
     width: 100%;
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    color: var(--primary-color);
 }
 footer h2 {
-    color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
 }
@@ -275,7 +273,7 @@ footer div {
     line-height: 1.5;
 }
 footer a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 /* FOOTER STYLES END */
 /* UTILITY STYLES START */
@@ -288,7 +286,6 @@ footer a {
     color: var(--secondary-color);
     border-right: 3px solid;
     text-align: left;
-    /* width: 180px; */
     height: 500px;
 }
 .primary-border {
